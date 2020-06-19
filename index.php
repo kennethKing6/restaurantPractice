@@ -29,7 +29,7 @@
             <a class="active" href="#hder">Home</a>
             <a href="#catalog">Catalog</a>
             <a href="#contact">Contact Us</a>
-            <a href="#location">Location</a>
+            <a href="https://maps.google.com/" target="_blank">Location</a>
 
         </div>
 
