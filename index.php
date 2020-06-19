@@ -115,6 +115,13 @@
 
             </div>
         </div>
+        <footer>
+            <p>
+                &copy; 2020 The Modern Website Builder. All rights reserved. &verbar; 
+                <span> Privacy Policy</span>  &verbar;<span>Terms & Conditions of Use</span>
+                &verbar;<span> Terms & Conditions of Use</span>
+            </p>
+        </footer>
 
     </body>
 </html> 
