@@ -46,45 +46,78 @@
                             <div class="mySlides fade">
                                 <div class="numbertext">1 / 5</div>
                                 <img src="foodImg/pic1.jpg">
-                                <div class="text">Steak salad</div>
+                                <div class="text">
+                                <h1>Steak salad</h1>
+
+                                    <ul>
+                                        <li>Lorem pi</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="mySlides fade">
                                 <div class="numbertext">2 / 5</div>
                                 <img src="foodImg/pic2.jpg" >
-                                <div class="text">Roasted Steak</div>
+                                <div class="text">
+                                <h1>Roasted Steak</h1>
+
+                                     <ul>
+                                        <li>Lorem pi</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="mySlides fade">
                                 <div class="numbertext">3 / 5</div>
                                 <img src="foodImg/pic3.jpg">
-                                <div class="text">Steak potato</div>
+                                <div class="text">
+                                <h1>Steak potato</h1>
+
+                                     <ul>
+                                        <li>Lorem pi</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="mySlides fade">
                                 <div class="numbertext">4 / 5</div>
                                 <img src="foodImg/pic4.jpg" >
-                                <div class="text">Nun and steak</div>
+                                <div class="text">
+                                <h1>Nun and steak</h1>
+
+                                    <ul>
+                                        <li>Lorem pi</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="mySlides fade">
                                 <div class="numbertext">5 / 5</div>
                                 <img src="foodImg/pic5.jpg" >
-                                <div class="text">Salad</div>
+                                <div class="text">
+                                    <h1>Salad and Steak</h1>
+                                    <ul>
+                                        <li>Lorem pi</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                        <li>Lorem pi rez</li>
+                                    </ul>
+                                </div>
                             </div>
                             
                             
 
-                            <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <!-- The dots/circles -->
-                            <!-- <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                                <span class="dot" onclick="currentSlide(4)"></span>
-                                <span class="dot" onclick="currentSlide(5)"></span>
-                            </div> -->
+                      
                 </div>
             </div>
             <div id="contact">
