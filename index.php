@@ -22,18 +22,19 @@
     </head>
     <body>
 
-        <div id="hder"class="header">
-            <h2>Scroll Down</h2>
-            <p>Scroll down to see the sticky effect.</p>
-        </div>
-
-        <div id="navbar">
+        <div id="navbar" class="sticky">
             <a class="active" href="#hder">Home</a>
             <a href="#menu">Menu</a>
             <a href="#contact">Contact Us</a>
             <a href="https://maps.google.com/" target="_blank">Location</a>
 
         </div>
+        <div id="hder"class="header">
+            <h2>Scroll Down</h2>
+            <p>Scroll down to see the sticky effect.</p>
+        </div>
+
+      
 
         <div class="content">
 

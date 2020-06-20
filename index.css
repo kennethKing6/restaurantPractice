@@ -17,7 +17,6 @@ body,body{
 #navbar {
   overflow: hidden;
   background-color: #F2793D;
-  position: sticky;
 }
 
 #navbar a {
