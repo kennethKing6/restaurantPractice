@@ -132,25 +132,24 @@
                 </div>
             </div>
             <div id="contact">
-                    <form action="contactF/contact.php" method="post">
+                    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" value="" placeholder="Your name..">
+                        <label for="fname">First Name*</label>
+                        <input type="text" id="fname" name="firstname" value="<?php echo $_POST?$_POST['firstname']:''; ?>" placeholder="Your first name.." required >
 
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" value="" placeholder="Your last name..">
+                        <label for="lname">Last Name*</label>
+                        <input type="text" id="lname" name="lastname" value="<?php echo $_POST?$_POST['lastname']:''; ?>" placeholder="Your last name.." required >
 
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                        </select>
+                        <label for="email">Email Address*</label>
+                        <input type="text" id="email" name="email" value="<?php echo $_POST?$_POST['email']:''; ?>" placeholder="Your email address.." required >
 
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" value="" placeholder="Write something.." style="height:200px"></textarea>
+                        <label for="title">Title (Optional)</label>
+                        <input type="text" id="title" name="title" value="<?php echo $_POST?$_POST['title']:''; ?>" placeholder="title.."  >
 
-                        <input type="submit">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" value="<?php echo $_POST?$_POST['message']:''; ?>" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" >
 
                     </form>
                     <div>
