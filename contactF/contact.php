@@ -7,27 +7,29 @@ use PHPMailer\PHPMailer\SMTP;
 
 function getClientMessage(){
 
-    $message =  <<< EOT
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-    <link href='cid:emailCss'/>
-    </head>
-    <body>
-        <img src="cid:food"/>
-        <h1>firstName: {$_POST['firstname']} </h1>
-        <h1>Last Name:  {$_POST['lastname']}</h1>
-        <h1>Country:  {$_POST['country']}</h1>
-        <h1>Subject: {$_POST['subject']}</h1>
-    </body>
-    </html>
-    EOT;
+    //The html initial html file
+    $htmlFile = file_get_contents("./email.php");
+
+    //Values that the user entered in the form
+    $firstname = $_POST['firstname'];
+     $lastname = $_POST['lastname'];
+      $email = $_POST['email'];
+     $title= $_POST['title'];
+    $message = $_POST['message'];
+
+
+    //fill the html
+    $htmlFile = str_replace("&firstname",$firstname, $htmlFile );
+    $htmlFile = str_replace("&lastname",$lastname, $htmlFile );
+    $htmlFile = str_replace("&email",$email, $htmlFile );
+    $htmlFile = str_replace("&title",$title, $htmlFile );
+    $htmlFile = str_replace("&message",$message, $htmlFile );
+
+    //The html file to send through email
+    $emailHtml =  $htmlFile;
     
-    return $message;
+    
+    return $emailHtml;
 }
 print_r($_POST);
     if($_POST){
@@ -42,14 +44,13 @@ print_r($_POST);
     $mail->Port = 465; // or 587
     $mail->Username = "kennethemmanuel28@gmail.com";
     $mail->Password = "KENNETH781227$";
-    $mail->SetFrom("iamjulieann.26@gmail.com");
+    $mail->SetFrom("kennethemmanuel28@gmail.com");
 
     //Content
     $mail->IsHTML(true);
     $mail->Subject = "Contact Email";
-    $body = getClientMessage();
     $mail->AddEmbeddedImage("../foodImg/pic1.jpg", 'food');
-    $mail->AddEmbeddedImage("./email.css", 'emailCss');
+    $body = getClientMessage();
 
     $mail->Body =  "$body";
     $mail->AddAddress("kennethemmanuelziguy28@gmail.com");
