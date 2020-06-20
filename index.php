@@ -9,8 +9,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Business Website</title>
-        <meta name="description" content="">
+        <title>Restaurant template design</title>
+        <meta name="description" content="This is a template design of a restaurant website made from 'The Modern Website'">
+        <meta name="author" content="Kouadio Kenneth">
+
+
         <meta name="viewport" content="width=device-width">
         <style >
             <?php include "index.css";?>
@@ -27,11 +30,12 @@
             <a href="#menu">Menu</a>
             <a href="#contact">Contact Us</a>
             <a href="https://maps.google.com/" target="_blank">Location</a>
+            <a href="#aboutus">About Us </a>
 
         </div>
         <div id="hder"class="header">
-            <h2>Scroll Down</h2>
-            <p>Scroll down to see the sticky effect.</p>
+            <h2>Creative Restaurant Website Design</h2>
+            <p>Open our doors to have a look</p>
         </div>
 
       
@@ -116,7 +120,14 @@
                             </div>
                             
                             
-
+                    <div id="aboutus">
+                        <h1>About Us</h1>
+                        <h2>Roster Restaurant</h2>
+                        <p>velit dignissim sodales ut eu sem integer vitae justo eget</p>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing. Duis convallis convallis tellus id interdum velit laoreet id.
+                        </p>
+                    </div>
                       
                 </div>
             </div>
@@ -143,7 +154,7 @@
 
                     </form>
                     <div>
-                        <a href="tel:2502139352340">(250) 213 935 2340</a>
+                        <a href="tel:2502139352340">telephone: (250) 213 935 2340</a>
                         <br/>
 
                     </div>
@@ -151,7 +162,7 @@
         </div>
         <footer>
             <p>
-                &copy; 2020 The Modern Website Builder. All rights reserved. &verbar; 
+                &copy; 2020 The Modern Website Design. All rights reserved. &verbar; 
                 <span> Privacy Policy</span>  &verbar;<span>Terms & Conditions of Use</span>
                 &verbar;<span> Portfolio</span>
             </p>
