@@ -8,7 +8,7 @@
 }
 body,html{
   margin: 0;
-  font-size: 28px;
+  font-size: calc(1vw + 100%);
   background-color: #FFFFFF;
   color: #FFFFFF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,7 +32,7 @@ h1{
 }
 .header > h2{
   font-family: matchbook;
-  font-size: larger;
+  font-size: calc(1vw + 96%);
 }
 .header > p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -219,16 +219,19 @@ to {opacity: 1}
   width: 100%;
   display:flex;
   flex-wrap: wrap;
-  margin: 5% 0;
+  height: fit-content;
+
   border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 
 #contact > form{
+  -ms-flex: 2; /* IE 10 */
   flex: 2;
-  margin-top: 20px;
+
   flex-grow: 2;
+  margin-top: 20px;
   padding: 5%;
 
   background-image: linear-gradient(270deg,#588E95,#588E95);
@@ -237,11 +240,12 @@ to {opacity: 1}
 }
 
 #contact > div{
+  -ms-flex: 3; /* IE 10 */
   flex: 3;
   margin:  6%;
   margin-top: 12%;
   background-image:url("foodImg/rest2_s.jpg") ;
-  background-position: 0 500px;
+ background-size: 100% ;
 
 }
 
@@ -310,4 +314,47 @@ footer{
 footer p{
   font-size: 15px;
   text-align: center;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .slideshow-container{
+    width: 90%;
+  }
+  .mySlides h1, #aboutus h1, #aboutus h2{
+    font-size:14px;
+
+  }
+  .text{
+    left:69px;
+    width: 60%;
+    height: 170px;
+    bottom: 30px;
+  }
+
+  #aboutus{
+    font-size: small;
+    width: 80%;
+  }
+
+#contact > div{
+  display: none;
+}
+#contact > form{
+  width: 70%;
+  margin: 3% auto;
+  font-size: medium;
+}
+#navbar a{
+  width: fit-content;
+  font-size: 40%;
+}
+.header{
+  padding-top: 40px;
+
+}
 }
