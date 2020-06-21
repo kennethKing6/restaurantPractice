@@ -7,8 +7,10 @@ use PHPMailer\PHPMailer\SMTP;
 
 function getClientMessage(){
 
-    //The html initial html file
-    $htmlFile = file_get_contents("./email.php");
+    //The initial html  and css files
+    $htmlFile = file_get_contents("./contactF/email.php");
+    $cssFile = file_get_contents("./contactF/email.css");
+
 
     //Values that the user entered in the form
     $firstname = $_POST['firstname'];
@@ -24,6 +26,8 @@ function getClientMessage(){
     $htmlFile = str_replace("&email",$email, $htmlFile );
     $htmlFile = str_replace("&title",$title, $htmlFile );
     $htmlFile = str_replace("&message",$message, $htmlFile );
+    $htmlFile = str_replace("<style></style>","<style>" .  $cssFile ."</style>", $htmlFile );
+
 
     //The html file to send through email
     $emailHtml =  $htmlFile;
@@ -48,12 +52,16 @@ print_r($_POST);
 
     //Content
     $mail->IsHTML(true);
-    $mail->Subject = "Contact Email";
-    $mail->AddEmbeddedImage("../foodImg/pic1.jpg", 'food');
+    $mail->Subject = "Welcome To 'The Modern Website'";
+    $mail->AddEmbeddedImage("foodImg/pic1.jpg", 'food');
+    $mail->AddEmbeddedImage("logo/my_logo.jpg", 'logo');
+
     $body = getClientMessage();
 
     $mail->Body =  "$body";
-    $mail->AddAddress("kennethemmanuelziguy28@gmail.com");
+    $mail->AddAddress("{$_POST['email']}");
+    $mail->AddAddress("dannyloc28@gmail.com");
+
     
      if(!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;

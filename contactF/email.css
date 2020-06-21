@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
 html,body{
-    box-sizing: content-box;
-    margin: 1%;
+    font-size: medium;
+    color: inherit;
 }
 
-body{
-    font-size: calc(10px + 0.5rem);
+p,h3,h5,li{
+    color: #333333;
 }
 
-h1{
-    color: rgb(61, 47, 255);
+
+img{
+    width: 220px;
 }
+
+
+
+
+
+
+
