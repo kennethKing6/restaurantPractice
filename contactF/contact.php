@@ -43,11 +43,11 @@ print_r($_POST);
     $mail->IsSMTP(); // enable SMTP
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // debugging: 1 = errors and messages, 2 = messages only
     $mail->SMTPAuth = true; // authentication enabled
-    $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
-    $mail->Port = 465; // or 587
+    $mail->Port = 587; // or 587
     $mail->Username = "kennethemmanuel28@gmail.com";
-    $mail->Password = "KENNETH781227$";
+    $mail->Password = "KENNETH781227&$";
     $mail->SetFrom("kennethemmanuel28@gmail.com");
 
     //Content
