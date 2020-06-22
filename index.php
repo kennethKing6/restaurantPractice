@@ -8,8 +8,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Restaurant template design</title>
-        <meta name="description" content="This is a template design of a restaurant website made from 'The Modern Website'">
+        <title>Restaurant Website design</title>
+        <meta name="description" content="This is a design of a website for a restaurant made by 'The Modern Website'">
         <meta name="author" content="Kouadio Kenneth">
 
 
