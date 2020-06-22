@@ -1,8 +1,6 @@
 <?php 
+    //This includes the contact php code and it runs when the user used the form
     include_once "./contactF/contact.php";
-    if($_POST){
-        sendEmail();
-    }
 ?>
 
 <!DOCTYPE html>

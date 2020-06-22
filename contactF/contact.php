@@ -35,7 +35,6 @@ function getClientMessage(){
     
     return $emailHtml;
 }
-print_r($_POST);
     if($_POST){
         require 'PHPMailer-master/PHPMailer-master/vendor/autoload.php';
 
@@ -66,12 +65,8 @@ print_r($_POST);
     $mail->AddAddress("dannyloc28@gmail.com");
 
     
-     if(!$mail->Send()) {
-        echo "Mailer Error: " . $mail->ErrorInfo;
-     } else {
-        echo "Message has been sent";
-     }
-     
+     $mail->Send();
+    
 
      }
 
