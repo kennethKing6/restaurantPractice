@@ -42,7 +42,7 @@ print_r($_POST);
         //Server setting
     $mail = new PHPMailer(); // create a new object
     $mail->IsSMTP(); // enable SMTP
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPDebug = SMTP::DEBUG_OFF; // debugging: 1 = errors and messages, 2 = messages only
     $mail->SMTPAuth = true; // authentication enabled
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Host = "smtp.gmail.com";
