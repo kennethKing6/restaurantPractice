@@ -1,5 +1,6 @@
 window.onload = function(){
     initializePage();
+   setTimeout(wasEmailSent,2000);
 }
 
 
@@ -37,3 +38,14 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 
+
+function wasEmailSent(){
+    var confirmationEmailTag = document.getElementById("emailContact");
+
+    if(confirmationEmailTag.style.display == "block"){
+      setTimeout(function() {
+          confirmationEmailTag.style.display = "none";
+      }, 2300);
+    } 
+    
+}

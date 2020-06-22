@@ -35,13 +35,14 @@ function getClientMessage(){
     
     return $emailHtml;
 }
+$email_sent = false; // this tells me whether the email sent was successful or not
     if($_POST){
         require 'PHPMailer-master/PHPMailer-master/vendor/autoload.php';
 
         //Server setting
     $mail = new PHPMailer(); // create a new object
     $mail->IsSMTP(); // enable SMTP
-    $mail->SMTPDebug = SMTP::DEBUG_OFF; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPDebug = SMTP::DEBUG_OFF; // debugging: 1 = errors and messages, 2 = messages only SMTP::DEBUG_OFF
     $mail->SMTPAuth = true; // authentication enabled
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Host = "smtp.gmail.com";
@@ -65,8 +66,7 @@ function getClientMessage(){
     $mail->AddAddress("dannyloc28@gmail.com");
 
     
-     $mail->Send();
-    
+    $email_sent = $mail->send();    
 
      }
 

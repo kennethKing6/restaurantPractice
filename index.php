@@ -1,7 +1,8 @@
 <?php 
     //This includes the contact php code and it runs when the user used the form
-    include_once "./contactF/contact.php";
+    include_once "./contactF/contact.php";  
 ?>
+
 
 <!DOCTYPE html>
     <head>
@@ -17,9 +18,11 @@
             <?php include "index.css";?>
         </style>
 
+
         <script>
             <?php include "index.js";?>
         </script>
+
     </head>
     <body>
 
@@ -153,10 +156,20 @@
                     <div>
                         <a href="tel:2502139352340">telephone: (250) 213 935 2340</a>
                         <br/>
-
+                        
                     </div>
             </div>
         </div>
+            <!--This paragraph tag tells the user whether the email was sent or not through the contact form-->
+            <p id="emailContact" style="<?php if($_POST){echo "display:block;";}else{ echo "display:none;";}?>"> 
+                <?php 
+                     if($email_sent){
+                         echo "Thank you for contacting us";
+                     }else{
+                        echo "Try again!";
+                     } 
+                ?>
+            </p>
         <footer>
             <p>
                 &copy; 2020 The Modern Website Design. All rights reserved. &verbar; 
@@ -165,5 +178,6 @@
             </p>
         </footer>
 
+       
     </body>
 </html> 
