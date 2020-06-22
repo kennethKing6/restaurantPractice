@@ -47,7 +47,7 @@ print_r($_POST);
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 587; // or 587
     $mail->Username = "kennethemmanuel28@gmail.com";
-    $mail->Password = "KENNETH781227&$";
+    $mail->Password = "KENNETH781227$&";
     $mail->SetFrom("kennethemmanuel28@gmail.com");
 
     //Content
