@@ -376,6 +376,11 @@ footer p{
 }
 .header{
   padding-top: 40px;
+  
 
+}
+.header > h2{
+  margin-top: 25%;
+  font-size: 60.3%;
 }
 }
