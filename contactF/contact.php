@@ -39,13 +39,16 @@ print_r($_POST);
     if($_POST){
         require 'PHPMailer-master/PHPMailer-master/vendor/autoload.php';
 
+        //Server setting
     $mail = new PHPMailer(); // create a new object
     $mail->IsSMTP(); // enable SMTP
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // debugging: 1 = errors and messages, 2 = messages only
     $mail->SMTPAuth = true; // authentication enabled
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // secure transfer enabled REQUIRED for Gmail
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Host = "smtp.gmail.com";
-    $mail->Port = 587; // or 587
+    $mail->Port       = 587;   
+    
+    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     $mail->Username = "kennethemmanuel28@gmail.com";
     $mail->Password = "KENNETH781227$&";
     $mail->SetFrom("kennethemmanuel28@gmail.com");
