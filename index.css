@@ -232,11 +232,12 @@ to {opacity: 1}
 
   flex-grow: 2;
   margin-top: 20px;
+  margin-bottom: 2%;
   padding: 5%;
 
   background-image: linear-gradient(270deg,#588E95,#588E95);
   border-radius: 6px;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #contact > div{
